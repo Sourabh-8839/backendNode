@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/orange-background-with-fluid-gradient-wavy-shapes_1017-28770.jpg);
+    background-size: cover;
+}
+
+#backshed{
+    position:fixed;
+    right: 46vw;
+    top: 0.5rem;
+    font-size: 53px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #ccc;
+    opacity: 0.3;
+}
+#but{
+    background-color: orange;
+}
+
+.shape{
+    position: relative;
+    left: 11rem;
+    border: 2px solid orange;
+}
+.head{
+    color: orange;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 999;
+}
+
+span{
+    padding: 10px;
+    border: 1px orange;
+    background: #ccc;
+    color:red;
+}

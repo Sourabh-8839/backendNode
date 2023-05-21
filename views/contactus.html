@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">shopsify</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/shop">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/admin/add-product">Add Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact-us">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class=" col-md-6 mx-auto text-start bg-white rounded shape">
+                <h2 id="backshed">Call</h2>
+                <p class="m-4 text-center head">Book a Call</p>
+                <p>Book a call slot and our represntive will call you within 1hr of selected time</p>
+                <hr>
+                <div class="form">
+                    <form action="/success" method="POST">
+                    <div>
+                        <label for="name" class="form-label">Name:</label><br>
+                        <input type="text" id="name" name="name" class="form-control" >
+                        <br>
+                    </div>
+                    <div class="form_input" >
+                        <label for="email" class="form-label">Email:</label><br>
+                        <input type="email" id="email" name="email"class="form-control" >
+                        <br>
+                    </div>
+                    <!-- <div class="form_input">
+                        <label for="phone" class="form-label">Phone:</label><br>
+                        <input type="text" id="phone" name="phone" class="form-control">
+                        <br>
+                    </div> -->
+                    <div class="form_input">
+                        <!-- <label for="date" class="form-label">Time for Call:</label><br>
+                    <div class="d-flex">
+                        <input type="date" class="form-control mx-2">
+                        <input type="time" class="form-control mx-2">
+                    </div> -->
+                    </div>
+                    <button class=" form-control bg-blue border rounded my-2" id="but" value="get a call">Get A call</buttontype=>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+
+</body>
+
+</html>
