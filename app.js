@@ -9,6 +9,7 @@ const adminRouter= require('./routes/admin');
 const shopRouter = require('./routes/shop');
 const contactRouter = require('./routes/contact');
 
+const errorController = require('./controllers/404');
 app.use(bodyParser.urlencoded({extended:false}))
 
 app.use(express.static(path.join(__dirname,'public','css')))
@@ -16,11 +17,7 @@ app.use(express.static(path.join(__dirname,'public','css')))
 app.use('/admin',adminRouter);
 app.use('/shop',shopRouter);
 app.use(contactRouter);
-app.use((req,res,next)=>{
-
-    res.status(404).sendFile(path.join(__dirname,'views','404.html'));
-    
-})
+app.use(errorController.error404);
 
 
 app.listen(4000);

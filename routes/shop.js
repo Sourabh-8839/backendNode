@@ -3,14 +3,12 @@ const express = require('express');
 
 const path =require('path');
 const router = express.Router();
-const rootDir =require('../path/path');
-router.get('/',(req,res,next)=>{
 
-    console.log('i am another middleware');
-    res.sendFile(path.join(rootDir,'views','shop.html'));
+const shopController = require('../controllers/addProduct');
 
-})
-router.get('/about',(req,res,next)=>{
+router.get('/',shopController.shophome);
+
+router.get('/about',(req,res)=>{
    
     // console.log(req.header);
     console.log('i am first middleware');
